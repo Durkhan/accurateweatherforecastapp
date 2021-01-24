@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/rel__"
+    android:orientation="vertical"
+    tools:context=".CityWeather">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/linacity">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/relacity"
+    android:paddingTop="30dp"
+    android:weightSum="6"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:orientation="horizontal"
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/city"
+            android:gravity="center_vertical"
+            >
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/locationcityback_"
+                android:paddingLeft="5dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/back"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/city_"
+            android:paddingRight="15dp"
+            android:gravity="center_horizontal"
+            >
+            <TextView
+                android:id="@+id/txt_city_name_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="London,GB"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                />
+            <TextView
+                android:id="@+id/txt_country_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="London,GB"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/date"
+            android:orientation="vertical"
+           >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Today"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/weatherdate"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                android:text="Wed,3 Dec"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relat_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:id="@+id/citytempurature"
+                android:text="-1"
+                android:layout_marginTop="5dp"
+                android:textColor="#fff"
+                android:textSize="55sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="°C"
+                android:textSize="19sp"
+                android:textColor="#fff"
+                android:layout_toRightOf="@+id/citytempurature"
+                android:layout_marginTop="18dp"
+                android:textAlignment="center"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="1dp"
+            android:id="@+id/feel"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Feels like"
+                android:textColor="#fff"
+                android:textSize="15sp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="3°"
+                android:id="@+id/feelslike"
+                android:paddingLeft="3dp"
+                android:textColor="#fff"
+                android:textSize="15sp"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:id="@+id/forecast"
+            android:paddingRight="25dp"
+            android:gravity="center_vertical"
+            >
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="0dp"
+                android:layout_weight="1.66"
+                app:tabTextColor="#D1D0D0"
+                android:contextClickable="true"
+                app:tabIndicatorColor="@android:color/transparent"
+                app:tabSelectedTextColor="#fff"
+                app:tabTextAppearance="@style/TabTextAppearance"
+                android:layout_height="wrap_content"/>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1.34"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Next 7 days"
+                    android:maxLines="1"
+                    android:drawableEnd="@drawable/next"
+                    android:textColor="#96CFEA"
+                    android:textAllCaps="false"
+                    android:id="@+id/weekly"
+                    android:layout_gravity="center_vertical"
+                    android:background="@android:color/transparent"
+                    android:textSize="15sp"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.01"
+            android:background="#fff"></View>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1.29"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </androidx.viewpager.widget.ViewPager>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1.9">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardcity_"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="#fff"
+        app:cardCornerRadius="40dp"
+        android:layout_below="@+id/viewf"
+        android:layout_marginBottom="-80dp"
+        android:weightSum="3"
+        app:cardPreventCornerOverlap="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:weightSum="3"
+            android:layout_gravity="center"
+            android:paddingLeft="25dp"
+            android:paddingRight="20dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.99">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.1"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            android:text="SUNRISE"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/transparentBlack"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:autoSizeMaxTextSize="20sp"
+                            android:autoSizeMinTextSize="50sp"
+                            android:text="23:00"
+                            android:id="@+id/sunrise"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textAlignment="center"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.1"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            android:text="SUNSET"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/transparentBlack"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:autoSizeMaxTextSize="30sp"
+                            android:autoSizeMinTextSize="20sp"
+                            android:textStyle="bold"
+                            android:id="@+id/sunset"
+                            android:text="23:00"
+                            android:textColor="#000000"
+                            android:textAlignment="center"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#66000000"
+                android:layout_weight="0.01">
+            </View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.99">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            android:text="VISIBILITY"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/transparentBlack"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:autoSizeMaxTextSize="30sp"
+                            android:autoSizeMinTextSize="20sp"
+                            android:text="90%"
+                            android:id="@+id/visibility"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textAlignment="center"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            android:text="HUMIDITY"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/transparentBlack"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:autoSizeMinTextSize="50sp"
+                            android:text="77%"
+                            android:id="@+id/humidity"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textAlignment="center"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="#66000000"
+                android:layout_weight="0.01">
+            </View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="80dp"
+                android:layout_weight="0.99">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            android:text="WIND"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/transparentBlack"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:autoSizeMaxTextSize="30sp"
+                            android:autoSizeMinTextSize="20sp"
+                            android:text="11 km/h"
+                            android:textStyle="bold"
+                            android:id="@+id/wind"
+                            android:textColor="#000000"
+                            android:textAlignment="center"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="10sp"
+                            android:text="PRESSURE"
+                            android:paddingBottom="5dp"
+                            android:textColor="@color/transparentBlack"
+                            android:textAlignment="center"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:autoSizeMaxTextSize="30sp"
+                            android:autoSizeMinTextSize="20sp"
+                            android:text="1015 hPa"
+                            android:id="@+id/pressure"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textAlignment="center"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>
+</LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/loading2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        >
+    </ProgressBar>
+    </RelativeLayout>

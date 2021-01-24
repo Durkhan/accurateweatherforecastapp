@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/detailsrela_"
+    tools:context=".DailyDetailsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linadetails"
+        android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/city"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:paddingTop="20dp"
+            android:paddingBottom="30dp"
+            android:id="@+id/back_"
+            android:paddingLeft="5dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/back"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2">
+
+    <TextView
+            android:id="@+id/txt_city_name_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="London,GB"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:paddingTop="20dp"
+            android:textAlignment="center"
+            android:paddingBottom="30dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/next"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/city"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 Hourly Forecast"
+            android:textColor="#fff"
+            android:paddingBottom="10dp"
+            android:textSize="20sp"
+            android:paddingLeft="20dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/next">
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/hourly"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

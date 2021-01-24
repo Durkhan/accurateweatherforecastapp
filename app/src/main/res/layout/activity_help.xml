@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Drawerlayout.Help">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#039BE5"
+            >
+            <ImageButton
+                android:id="@+id/backdrawer"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                android:background="@android:color/transparent"
+                android:paddingLeft="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="Help"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Default options"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingBottom="15dp"
+            android:textSize="35sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Temperature:Celcius (°C)"
+            android:textColor="#000000"
+            android:paddingBottom="15dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Wind speed:metr/second (m/s)"
+            android:textColor="#000000"
+            android:paddingBottom="15dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Pressure:hectopascals (hpa)"
+            android:textColor="#000000"
+            android:paddingBottom="15dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Humidity:with percent(%)"
+            android:textColor="#000000"
+            android:paddingBottom="15dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Visibility:metr (m)"
+            android:textColor="#000000"
+            android:paddingBottom="15dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Sunrise and sunset:Fit your local time"
+            android:textColor="#000000"
+            android:paddingBottom="30dp"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Advanced options"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingBottom="15dp"
+            android:textSize="35sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• My location"
+            android:textColor="#000000"
+            android:paddingBottom="15dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Settings"
+            android:textColor="#000000"
+            android:paddingBottom="15dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• About the application"
+            android:textColor="#000000"
+            android:paddingBottom="30dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My location"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingBottom="15dp"
+            android:textSize="35sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Select this item"
+            android:textColor="#000000"
+            android:paddingBottom="15dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• In this time,you will show your location in the opening map"
+            android:textColor="#000000"
+            android:paddingBottom="15dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingBottom="15dp"
+            android:textSize="35sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Select this item in drawer and this page opens"
+            android:textColor="#000000"
+            android:paddingBottom="10dp"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="170dp"
+            android:layout_gravity="start"
+            android:paddingBottom="30dp"
+            android:src="@drawable/settingimage" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• Notification"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingBottom="15dp"
+            android:textSize="35sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• You switch on notification but Warning: for this,your telephone must be android 8 and higher"
+            android:textColor="#000000"
+            android:paddingBottom="30dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About the application"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingBottom="15dp"
+            android:textSize="35sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="• In this page you can read app provides you which informations"
+            android:textColor="#000000"
+            android:paddingBottom="30dp"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do you still have any questions?"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingBottom="15dp"
+            android:textSize="35sp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please email us at "
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:linksClickable="true"
+                android:autoLink="email"
+                android:textColorLink="#3949AB"
+                android:id="@+id/openemail"
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="And we reply your questions soon "
+            android:textColor="#000000"
+            android:paddingBottom="30dp"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A lot of informations"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:paddingBottom="10dp"
+            android:textSize="35sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:linksClickable="true"
+            android:autoLink="web"
+            android:textColorLink="#3949AB"
+            android:id="@+id/openweb"
+            android:paddingBottom="15dp"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+</ScrollView>
+</LinearLayout>

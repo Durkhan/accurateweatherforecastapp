@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+      <group android:checkableBehavior="single">
+          <item
+              android:id="@+id/nav_location"
+              android:title="My location"
+              android:icon="@drawable/location"/>
+      </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_settings"
+            android:title="Settings"
+            android:icon="@drawable/setting"/>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_share"
+            android:title="Share"
+            android:icon="@drawable/share"/>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_about"
+            android:title="About the application"
+            android:icon="@drawable/about"/>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_help"
+            android:title="Help"
+            android:icon="@drawable/help"/>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_contact"
+            android:title="Contact us"
+            android:icon="@drawable/contact"/>
+    </group>
+</menu>

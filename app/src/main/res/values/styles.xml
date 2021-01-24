@@ -1,0 +1,34 @@
+<resources>
+    <!-- Base application theme. -->
+
+    <style name="MyMaterialTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="drawerArrowStyle">@style/DrawerColor</item>
+    </style>
+
+
+    <style name="MaterialSearchBarLight"></style>
+    <style name="tabLayoutStyle" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/TabTextAppearance</item>
+
+    </style>
+    <style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:maxLines">1</item>
+        <item name="autoSizeTextType">uniform</item>
+
+    </style>
+    <style name="tabLayoutStyle2" parent="Widget.Design.TabLayout">
+        <item name="textAppearanceBody2">@style/textAppearanceSubtitle2</item>
+    </style>
+    <style name="textAppearanceSubtitle2" parent="TextAppearance.AppCompat.Body2">
+        <item name="textEndPadding">-40dp</item>
+    </style>
+<style name="DrawerColor" parent="Widget.AppCompat.DrawerArrowToggle">
+    <item name="android:statusBarColor">#00000000</item>
+    <item name="color">#fff</item></style>
+
+</resources>
