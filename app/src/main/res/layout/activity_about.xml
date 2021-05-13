@@ -74,7 +74,7 @@
                 android:layout_width="120dp"
                 android:layout_height="80dp"
                 android:gravity="right"
-               android:src="@drawable/weatherpicture">
+               android:src="@mipmap/weatherprofil_round">
 
             </ImageView>
         </LinearLayout>
@@ -89,7 +89,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Version:2.0"
+        android:text="Version:24.7.7"
         android:textColor="@color/transparentBlack"
         android:layout_gravity="center"
         android:textSize="20sp"

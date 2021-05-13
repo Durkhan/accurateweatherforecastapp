@@ -30,5 +30,4 @@
 <style name="DrawerColor" parent="Widget.AppCompat.DrawerArrowToggle">
     <item name="android:statusBarColor">#00000000</item>
     <item name="color">#fff</item></style>
-
 </resources>

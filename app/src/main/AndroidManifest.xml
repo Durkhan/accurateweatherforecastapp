@@ -1,22 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.weather.accurateweatherforecast">
+    package="com.myweatherforecastapp.accurate">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission
+        android:name="android.permission.SET_TIME"
+        tools:ignore="ProtectedPermissions" />
 
     <application
         android:allowBackup="true"
         android:hardwareAccelerated="false"
-        android:icon="@mipmap/weatherprofil"
+        android:icon="@drawable/weatherpicture"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:largeHeap="true"
         android:theme="@style/MyMaterialTheme">
+        <activity android:name=".RadarCases.PrecipitationRadar"></activity>
+        <activity android:name=".RadarCases.PressureRadar" />
+        <activity android:name=".RadarCases.WindspeedRadar" />
+        <activity android:name=".RadarCases.CloudsRadar" />
+        <activity android:name=".Drawerlayout.RadarActivity" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9662381145965378~3340063729" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,10 +37,31 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <receiver android:name=".Weatherhourlywidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/weatherapp_hourly_widget" />
+        </receiver>
+        <receiver android:name=".WeatheRDailyWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/weatherapp_daily_widget" />
+        </receiver>
+
         <activity android:name=".Drawerlayout.Help" />
         <activity android:name=".Drawerlayout.About" />
         <activity android:name=".Drawerlayout.Settings" />
         <activity android:name=".Drawerlayout.Contactus" />
+
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />

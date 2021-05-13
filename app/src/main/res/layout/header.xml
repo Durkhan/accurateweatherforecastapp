@@ -9,10 +9,10 @@
     android:padding="20dp">
 
     <ImageView
-        android:layout_width="90dp"
-        android:layout_height="90dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:background="@android:color/transparent"
-        android:src="@drawable/weatherpicture">
+        android:src="@mipmap/weatherprofil_round">
 
     </ImageView>
     <TextView

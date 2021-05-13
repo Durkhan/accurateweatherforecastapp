@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialLayout="@layout/hourlywidget"
+    android:minHeight="128dp"
+    android:minWidth="256dp"
+    android:updatePeriodMillis="1800000"
+    android:previewImage="@drawable/widgetimage"
+    android:widgetCategory="home_screen">
+</appwidget-provider>

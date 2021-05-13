@@ -353,6 +353,7 @@
             android:layout_height="wrap_content"
             android:paddingTop="10dp"
             android:orientation="horizontal"
+            android:id="@+id/linear"
             android:weightSum="2"
             android:layout_below="@+id/recycle_forecast"
             >
@@ -368,7 +369,7 @@
             app:ssv_label_horizontal_offset="12dp"
             app:ssv_label_vertical_offset="2dp"
             app:ssv_shadow_color="#D9C0CA33"
-            app:ssv_sun_color="@color/amber"
+            app:ssv_sun_color="#FFFFBB33"
             app:ssv_sun_radius="10dp"
             app:ssv_track_color="@color/windowBackground"
             app:ssv_track_width="1.5dp"
@@ -383,6 +384,15 @@
                 app:lottie_colorFilter="#fff"
                 app:lottie_loop="true"/>
         </LinearLayout>
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-9662381145965378/5134515217">
+        </com.google.android.gms.ads.AdView>
     </LinearLayout>
 
     </ScrollView>

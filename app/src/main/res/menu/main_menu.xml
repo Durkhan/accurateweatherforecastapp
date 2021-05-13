@@ -8,6 +8,12 @@
       </group>
     <group android:checkableBehavior="single">
         <item
+            android:id="@+id/nav_radar"
+            android:title="Radar"
+            android:icon="@drawable/radar"/>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
             android:id="@+id/nav_settings"
             android:title="Settings"
             android:icon="@drawable/setting"/>
@@ -18,6 +24,7 @@
             android:title="Share"
             android:icon="@drawable/share"/>
     </group>
+
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_about"

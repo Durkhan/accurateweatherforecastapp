@@ -6,4 +6,27 @@
     <color name="windowBackground">#ffffff</color>
     <color name="navagationBarcolor">#000000</color>
     <color name="textColorPrimary">#ffffff</color>
+    <color name="color1">#5E35B1</color>
+    <color name="color2">#0093d7</color>
+    <color name="color3">#fff</color>
+    <color name="color4">#FDD835</color>
+    <color name="color5">#E53935</color>
+    <color name="colorpressure1">#1E88E5</color>
+    <color name="colorpressure2">#039BE5</color>
+    <color name="colorpressure3">#807CB342</color>
+    <color name="colorpressure4">#B3FB8C00</color>
+    <color name="colorpressure5">#E53935</color>
+    <color name="colorclouds1">#fff</color>
+    <color name="colorclouds2">#fff</color>
+    <color name="colorclouds3">#338E24AA</color>
+    <color name="colorclouds4">#668E24AA</color>
+    <color name="colorwindspeed1">#fff</color>
+    <color name="colorwindspeed2">#335E35B1</color>
+    <color name="colorwindspeed3">#4D5E35B1</color>
+    <color name="colorwindspeed4">#665E35B1</color>
+    <color name="colorwindspeed5">#805E35B1</color>
+    <color name="colorwindspeed6">#B35E35B1</color>
+    <color name="colorwindspeed7">#E65E35B1</color>
+
+
 </resources>

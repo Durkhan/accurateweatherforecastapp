@@ -8,4 +8,11 @@
     <string name="your_string"><u>accurateweatherforecastapp2021@gmail.com</u></string>
     <string name="your_string_email"><u>info@openweathermap.org</u></string>
     <string name="your_string_web"><u>openweathermap.org</u></string>
+    <string-array name="radar_cases">
+        <item>Temperature</item>
+        <item>Pressure</item>
+        <item>Clouds</item>
+        <item>Wind speed</item>
+        <item>Precipitation</item>
+    </string-array>
 </resources>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Drawerlayout.RadarActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#039BE5"
+            >
+
+
+            <ImageButton
+                android:id="@+id/backdrawer_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                android:gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:paddingLeft="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Radar"
+                    android:id="@+id/cases"
+                    android:gravity="center_vertical"
+                    android:textSize="19sp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"/>
+
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="end"
+                   >
+                <Spinner
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:id="@+id/radarcases"
+                    android:backgroundTint="#fff"/>
+
+               </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/radar_map"
+            android:name="com.google.android.gms.maps.MapFragment">
+
+
+        </fragment>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Temperature,°C"
+                android:textSize="12sp"
+                android:textColor="#000000"
+                android:paddingTop="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="vertical"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="4"
+                            android:paddingTop="5dp"
+                            android:layout_gravity="center_vertical"
+                            android:orientation="horizontal"
+                            >
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:textSize="10sp"
+                                android:textColor="#000000"
+                                android:layout_height="wrap_content"
+                                android:text="-40"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:textSize="10sp"
+                                android:textColor="#000000"
+                                android:layout_height="wrap_content"
+                                android:text="-20"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:textSize="10sp"
+                                android:textColor="#000000"
+                                android:layout_height="wrap_content"
+                                android:text="0"/>
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:textSize="10sp"
+                                android:textColor="#000000"
+                                android:layout_height="wrap_content"
+                                android:text="20"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textSize="10sp"
+                                android:textColor="#000000"
+                                android:layout_height="wrap_content"
+                                android:text="40"/>
+
+                        </LinearLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            android:id="@+id/background"
+                            android:layout_gravity="right">
+
+                        </View>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
